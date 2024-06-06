@@ -29,7 +29,14 @@ SaveFolder = <string> - The secondary title of the UI. (You need the ".lua" at t
 Window:AddMinimizeButton({
   Button = {
     Image = "rbxassetid://17749134044"
-  }
+  },
+  UICorner = {true,
+    -- Corner Properties
+    CornerRadius = UDim.new(0.5, 0)
+  },
+  UIStroke = {false, {
+    -- Stroke Properties
+  }}
 })
 
 --[[
