@@ -6,12 +6,12 @@ You can see the name of each item in the [icon file](https://raw.githubuserconte
 
 ## Booting the Library
 ```lua
-local DoxLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/knownjs7/DoxLibV5/main/source.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/knownjs7/DoxLibV5/main/source.lua"))()
 ```
 
 ## Creating a Window
 ```lua
-local Window = DoxLib:MakeWindow({
+local Window = Library:MakeWindow({
     Title = "DoxHub",
     SubTitle = "Thank you for using our Hub!",
     SaveFolder = "doxhub.lua"
@@ -21,6 +21,19 @@ local Window = DoxLib:MakeWindow({
 Title = <string> - The title of the UI.
 SubTitle = <string> - The secondary title of the UI.
 SaveFolder = <string> - The secondary title of the UI. (You need the ".lua" at the end)
+]]
+```
+
+## Creating a Minimize Button
+```lua
+Window:AddMinimizeButton({
+  Button = {
+    Image = "rbxassetid://17749134044"
+  }
+})
+
+--[[
+Button.Image = <string> - The icon of the Minimize Button.
 ]]
 ```
 
