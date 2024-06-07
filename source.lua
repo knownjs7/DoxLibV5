@@ -1396,7 +1396,7 @@ function doxlib:MakeWindow(Configs)
       CalculateSize()
       
       local Dropdown = {}
-      table.insert(doxlib.Options, {type = "Dropdown", Name = DName, func = Dropdown})
+      table.insert(redzlib.Options, {type = "Dropdown", Name = DName, func = Dropdown})
       function Dropdown:Visible(Bool)
         if Bool == nil then Button.Visible = not Button.Visible return end
         Button.Visible = Bool
